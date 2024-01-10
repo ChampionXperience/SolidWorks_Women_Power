@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="354.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="2" auto-rotate environment-image="Villa Interior - 2k.hdr" exposure="1.62" tone-mapping="commerce" shadow-softness="1">
+      <button class="Hotspot" slot="hotspot-4" data-position="-0.07659300989213497m 0.021776209839992594m 0.3717229007267925m" data-normal="-9.517720033983064e-17m 1m -3.000341437815916e-17m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">SOLIDWORKS</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.04997945045697724m 0.033424846052729926m -0.5255983923357063m" data-normal="0.29018642361245406m -0.01427758272448517m -0.9568636215169636m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Champion Xperience</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
